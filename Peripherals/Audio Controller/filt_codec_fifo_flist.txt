@@ -1,0 +1,12 @@
+# Output products list for <filt_codec_fifo>
+filt_codec_fifo.asy
+filt_codec_fifo.ngc
+filt_codec_fifo.sym
+filt_codec_fifo.v
+filt_codec_fifo.veo
+filt_codec_fifo.vhd
+filt_codec_fifo.vho
+filt_codec_fifo.xco
+filt_codec_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+filt_codec_fifo_flist.txt
+filt_codec_fifo_xmdf.tcl

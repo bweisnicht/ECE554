@@ -1,0 +1,59 @@
+MYPATH=`pwd`
+VAR1="sequences.asm"
+VAR2="sequences_interrupt.asm"
+cd $1
+ls -1 $VAR2 > test.list
+cd $MYPATH
+echo "run" > command.list
+echo "quit" >> command.list
+
+g++ ~/ECE554/ece554/assembler/assembler554.cpp -o ~/ECE554/ece554/assembler/assembler.out
+g++ ~/ECE554/ece554/assembler/simulator.cpp -o ~/ECE554/ece554/assembler/simulator.out
+
+COMP="c"
+
+ if [ "$2" = "$COMP" ]
+    then
+echo "starting modelsim compilation"
+cd ~/ECE554/ece554/
+vsim -c <~/ECE554/ece554/assembler/comp_script.do >modelsim_comp.txt
+echo "modelsim compiled"
+cd $MYPATH
+
+ fi
+
+	echo $VAR1
+	~/ECE554/ece554/assembler/assembler.out $VAR1 mach_$VAR1 > output.tmp
+	echo "$VAR1 assembled"
+	cp -f outhexass.mem ~/ECE554/ece554/assembler/
+
+	~/ECE554/ece554/assembler/simulator.out mach_$VAR1 < command.list > output.tmp
+	echo "$VAR1 software simulated"
+
+	echo $VAR2
+	~/ECE554/ece554/assembler/assembler.out $VAR2 mach_$VAR2 > output.tmp
+	echo "$VAR2 interrupt assembled"
+    cp -f outhexass.mem ~/ECE554/ece554/assembler/
+	cd ~/ECE554/ece554/
+	vsim -c <~/ECE554/ece554/assembler/sim_script_int.do >modelsim_sim.txt
+	echo "$VAR2 modelsim simulated"
+	cd $MYPATH
+	diff ~/ECE554/ece554/reg.trace simoutputfile > test_result.txt
+	RESULT=`head test_result.txt`
+
+	NUM1=${#RESULT}
+	NUM2=0
+	if [ "$NUM1" -gt "$NUM2" ]
+		then
+			echo "ERROR exists in $VAR1"
+			cp test_result.txt $VAR1_result.diff
+		else
+			echo "$VAR1 SUCCESS"
+	fi
+
+rm -f command.list
+
+rm -f output.tmp
+rm -f mach_*
+
+

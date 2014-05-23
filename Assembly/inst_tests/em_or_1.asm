@@ -1,0 +1,7 @@
+// Test that or-ing 0x0000 with 0x0000 yields 0x0000
+lbi 	r3,0x00
+slbi	r3,0x00
+lbi	r4,0x00
+slbi	r4,0x00
+or	r5,r4,r3
+HALT

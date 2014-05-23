@@ -1,0 +1,49 @@
+# RS232 Configuration
+NET "txd" LOC = "AE7";
+NET "txd" IOSTANDARD = LVCMOS25;
+NET "txd" DRIVE = 8;
+NET "txd" SLEW = SLOW;
+
+NET "rxd" LOC = "AJ8";
+NET "rxd" IOSTANDARD = LVCMOS25;
+
+
+# Switch Configuration
+NET "rst" LOC = "AC11";
+
+
+NET "rst" IOSTANDARD = LVCMOS25;
+
+# push buttons stuff
+NET "pb0" LOC = "AG5"; #PB_ENTER
+NET "pb1" LOC = "AH4";    #PB_UP
+NET "pb2" LOC = "AG3";  #PB_DOWN
+NET "pb3" LOC = "AH1";  #PB_LEFT
+NET "pb4" LOC = "AH2"; #PB_RIGHT
+
+NET "pb0" IOSTANDARD = LVCMOS25;
+NET "pb1" IOSTANDARD = LVCMOS25;
+NET "pb2" IOSTANDARD = LVCMOS25;
+NET "pb3" IOSTANDARD = LVCMOS25;
+NET "pb4" IOSTANDARD = LVCMOS25;
+
+# switch stuff
+NET "eq0" LOC = "AD11";
+NET "eq1" LOC = "AF8";
+NET "eq2" LOC = "AF9";
+
+NET "eq0" IOSTANDARD = LVCMOS25;
+NET "eq1" IOSTANDARD = LVCMOS25;
+NET "eq2" IOSTANDARD = LVCMOS25;
+
+
+# Clock Configuration
+NET "clk" LOC = "AJ15";
+NET "clk" IOSTANDARD = LVCMOS25;
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 10.00 ns HIGH 50 %;
+
+NET "clk_sys" LOC = "AJ16";
+NET "clk_sys" IOSTANDARD = LVCMOS25;
+NET "clk_sys" DRIVE = 6;
+NET "clk_sys" SLEW = SLOW;

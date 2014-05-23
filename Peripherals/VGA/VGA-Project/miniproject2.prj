@@ -1,0 +1,8 @@
+verilog work "vga_logic.v"
+verilog work "vga_clk.v"
+vhdl work "./char_rom.vhd"
+verilog work "timingen.v"
+verilog work "ram.v"
+vhdl work "./fifo.vhd"
+verilog work "displayplane.v"
+verilog work "miniproject2.v"

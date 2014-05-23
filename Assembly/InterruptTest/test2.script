@@ -1,0 +1,32 @@
+ls $1sp_*.asm > test.list
+echo "run" > command.list
+echo "quit" >> command.list
+MYPATH=`pwd`
+g++ ~/ECE554/ece554/assembler/assembler554.cpp -o ~/ECE554/ece554/assembler/assembler.out
+g++ ~/ECE554/ece554/assembler/simulator.cpp -o ~/ECE554/ece554/assembler/simulator.out
+while read p; do
+	echo $p
+	~/ECE554/ece554/assembler/assembler.out $p mach_$p > output.tmp
+	cp -f outhexass.mem ~/ECE554/ece554/assembler/
+	~/ECE554/ece554/assembler/simulator.out mach_$p < command.list > output.tmp
+	cd ~/ECE554/ece554/
+	vsim -c <~/ECE554/ece554/assembler/sim_script.do >modelsim_sim.txt
+	cd $MYPATH
+	diff ~/ECE554/ece554/reg.trace simoutputfile > test_result.txt
+	RESULT=`head test_result.txt`
+
+	NUM1=${#RESULT}
+	NUM2=0
+	if [ "$NUM1" -gt "$NUM2" ]
+		then
+			echo "error exists in $p"
+			cp test_result.txt $p_result.diff
+	fi
+
+done < test.list
+rm -f command.list
+rm -f test.list
+rm -f output.tmp
+rm -f mach_*
+
+

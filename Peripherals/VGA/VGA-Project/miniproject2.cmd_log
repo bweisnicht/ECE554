@@ -1,0 +1,413 @@
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "D:/554/rgaiken/MiniProject2-Local/miniproject2.xst" -ofn "D:/554/rgaiken/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "D:/554/rgaiken/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+xst -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "F:/MiniProject2-Local/miniproject2.xst" -ofn "F:/MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "F:/MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd
+xst -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -ifn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.xst" -ofn "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/miniproject2.syr"
+ngdbuild -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2vp30-ff896-6 "miniproject2.ngc" miniproject2.ngd
+map -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -p xc2vp30-ff896-6 -cm area -pr off -k 4 -c 100 -tx off -o miniproject2_map.ncd miniproject2.ngd miniproject2.pcf
+par -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -w -intstyle ise -ol std -t 1 miniproject2_map.ncd miniproject2.ncd miniproject2.pcf
+trce -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -v 3 -s 6 -xml miniproject2 miniproject2.ncd -o miniproject2.twr miniproject2.pcf -ucf miniproject2.ucf
+bitgen -ise "C:/Documents and Settings/rgaiken/Desktop/Copy of MiniProject2-Local/MiniProject2-Local.ise" -intstyle ise -f miniproject2.ut miniproject2.ncd

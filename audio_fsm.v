@@ -1,0 +1,220 @@
+`timescale 1ns/100ps
+module audio_fsm(bit_clk, rst_n, fifo_in, volume, set_volume, sync, sdata_out,read_fifo);
+	/**Inputs**/
+	//12.288Mhz clock from audio codec
+	input bit_clk;
+	//active low reset
+	input rst_n;
+	//PCM data from FIFO
+	input [19:0] fifo_in;
+	//16 bit volume value to write to codec register
+	input [15:0] volume;
+	//control to write volume data to codec register
+	input set_volume;
+
+	/**Outputs**/
+	//sync signal identifies the start of a frame to audio codec
+	output reg sync;
+	//serial frame data to audio codec
+	output sdata_out;
+	//signal to fifo to read new data
+	output reg read_fifo;
+	
+
+	reg [4:0] state, next; // Current and next state
+	reg [8:0] count;
+	reg set_sync;
+	reg data_out;
+	reg clear_count;
+	reg [19:0] pcm_data;
+	reg shift;
+	reg load;
+	
+	wire pcm_in;
+
+	//State definitions
+	localparam IDLE = 0;
+	localparam SLOT0 = 1;
+	localparam SLOT1 = 2;
+	localparam SLOT2 = 3;
+	localparam SLOT3 = 4;
+	localparam SLOT4 = 5;
+	localparam SLOT_ELSE = 6;
+	
+	//fifo data shift register
+	always @(posedge bit_clk) begin
+		if(!rst_n)
+			pcm_data <= 0;
+		else if(shift)
+			pcm_data <= {1'b0, pcm_data[19:1]};
+		else if(load) 
+			pcm_data <= fifo_in;
+	end
+	
+	//LSB of pcm data to send serial bits
+	assign pcm_in = pcm_data[0];
+	
+	always @(posedge bit_clk) begin
+		if(!rst_n)
+			count <= 0;
+		else if(clear_count)
+			count <= 0;
+		else 
+			count <= count + 1;
+	end
+
+	// State register control
+	always @(posedge bit_clk) begin
+		if (!rst_n)
+			state <= IDLE;
+		else
+			state <= next;
+	end
+	
+	always@(*) begin
+		next = IDLE;
+		clear_count = 0;
+		read_fifo = 0;
+		set_sync = 0;
+		data_out = 0;
+		sync = 0;
+		load = 0;
+		case(state)
+			IDLE: begin
+					next = SLOT0;
+					clear_count = 1;
+			end
+			
+			SLOT0: begin
+				sync = 1;
+				if(count == 0) begin
+					data_out = 1;
+					next = SLOT0;
+				end
+				else if (count == 1) begin
+					if(set_volume) begin
+						data_out = 1;
+						next = SLOT0;
+					end
+					else begin
+						data_out = 0;
+						next = SLOT0;
+					end
+				end
+				else if (count == 2) begin
+					if(set_volume) begin
+						data_out = 1;
+						next = SLOT0;
+					end
+					else begin
+						data_out = 0;
+						next = SLOT0;
+					end
+				end
+				else if ((count == 3) | (count == 4)) begin
+					if(set_volume) begin
+						data_out = 0;
+						next = SLOT0;
+					end
+					else begin
+						data_out = 1;
+						next = SLOT0;
+					end
+				end
+				else if (count == 15) begin
+					data_out = 0;
+					next = SLOT1;
+					clear_count = 1;
+				end
+				else begin
+					data_out = 0;
+					next = SLOT0;
+				end
+			end
+			
+			SLOT1: begin
+				if(count == 0) begin
+					data_out = 0;
+					next = SLOT1;
+				end
+				//address of headphone vol register = 0000100
+				//hard coded for now
+				else if (count == 5) begin
+					data_out = 1;
+					next = SLOT1;
+				end
+				else if(count == 19) begin
+					data_out = 0;
+					next = SLOT2;
+					clear_count = 1;
+				end
+				else begin
+					data_out = 0;
+					next = SLOT1;
+				end
+			end
+			
+			SLOT2: begin
+				if(count < 16) begin
+					//get volume data bit by bit per cycle
+					//set to 0 for now
+					data_out = 0;
+					next = SLOT2;
+				end
+				else if(count == 19) begin
+					data_out = 0;
+					next = SLOT3;
+					clear_count = 1;
+					read_fifo = 1;
+					load = 1;
+				end
+				else begin
+					data_out = 0;
+					next = SLOT2;
+				end
+			end
+			SLOT3: begin
+				if (count == 19) begin
+				  load = 1;
+					data_out = pcm_in;
+					next = SLOT4;
+					clear_count = 1;
+				end
+				else begin
+					data_out = pcm_in;
+					next = SLOT3;
+					shift = 1;
+				end	
+			end
+			SLOT4: begin
+				if (count == 19) begin
+					data_out = pcm_in;
+					next = SLOT_ELSE;
+					clear_count = 1;
+					read_fifo = 1;
+				end
+				else begin
+					data_out = pcm_in;
+					next = SLOT4;
+				end	
+			end
+			SLOT_ELSE: begin
+				if(count == 159) begin
+					data_out = 0;
+					next = IDLE;
+					clear_count = 1;
+				end
+				else begin
+					data_out = 0;
+					next = SLOT_ELSE;
+				end
+			end
+		endcase
+	end
+	
+	assign sdata_out = data_out;
+	
+endmodule
+				
+	
+	

@@ -1,0 +1,13 @@
+# Output products list for <instr_firmware>
+instr_firmware.asy
+instr_firmware.mif
+instr_firmware.ngc
+instr_firmware.sym
+instr_firmware.v
+instr_firmware.veo
+instr_firmware.vhd
+instr_firmware.vho
+instr_firmware.xco
+instr_firmware_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+instr_firmware_flist.txt
+instr_firmware_xmdf.tcl

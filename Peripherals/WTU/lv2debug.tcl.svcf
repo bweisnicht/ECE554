@@ -1,0 +1,255 @@
+# SimVision Command Script (Tue Mar 19 11:07:21 AM CDT 2013)
+#
+# Version 08.20.s029
+#
+# You can restore this configuration with:
+#
+#     ncverilog wtu_lvl_1.v wtu_lvl_2.v wtu_lvl_3.v wtu_top.v tb_wtu_top.v +gui +access+rwc +tcl+lv2debug.tcl
+#
+
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-SimControl-WatchList {
+  usual
+  hide set_break
+}
+preferences set txe-locate-add-fibers 1
+preferences set txe-navigate-search-locate 0
+preferences set txe-view-hold 0
+preferences set toolbar-SimControl-WaveWindow {
+  usual
+  position -pos 0
+}
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-CursorControl-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set waveform-signal-add-radix decimal
+preferences set txe-navigate-waveform-locate 1
+preferences set txe-view-hidden 0
+preferences set txe-search-show-linenumbers 1
+preferences set toolbar-txe_waveform_toggle-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  hide set_break
+  shown 0
+}
+preferences set txe-navigate-waveform-next-child 1
+preferences set toolbar-Edit-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-WaveZoom-WaveWindow {
+  usual
+  shown 0
+}
+preferences set txe-locate-scroll-x 1
+preferences set txe-locate-scroll-y 1
+preferences set txe-locate-pop-waveform 1
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Simulator
+#
+database require simulator -hints {
+	simulator "ncverilog wtu_lvl_1.v wtu_lvl_2.v wtu_lvl_3.v wtu_top.v tb_wtu_top.v +gui +access+rwc -input lv2debug.tcl"
+}
+
+#
+# Groups
+#
+catch {group new -name {Group 1} -overlay 0}
+catch {group new -name {Group 2} -overlay 0}
+catch {group new -name {Group 3} -overlay 0}
+
+group using {Group 1}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+
+group insert \
+    tb_wtu_top.UUT.clk \
+    tb_wtu_top.UUT.en \
+    signed(tb_wtu_top.UUT.en_count) \
+    signed(tb_wtu_top.UUT.en_v) \
+    signed(tb_wtu_top.UUT.in) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_m.lpo) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_m.hpo)
+
+group using {Group 2}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+
+group insert \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in_prev1) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in_prev2) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.tmpA) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.tmpB) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.hpo) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.lpo)
+
+group using {Group 3}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+
+group insert \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in_prev1) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in_prev2) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.tmpA) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.tmpB) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.hpo) \
+    signed(tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.lpo)
+
+#
+# Cursors
+#
+set time 100ns
+if {[catch {cursor new -name  TimeA -time $time}] != ""} {
+    cursor set -using TimeA -time $time
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {
+{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}
+}
+mmap new -reuse -name {Example Map} -radix %x -contents {
+{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}
+}
+
+#
+# Design Browser windows
+#
+if {[catch {window new browser -name "Design Browser 1" -geometry 700x500+-9+404}] != ""} {
+    window geometry "Design Browser 1" 700x500+-9+404
+}
+window target "Design Browser 1" on
+browser using "Design Browser 1"
+browser set -scope [subst -nobackslashes -nocommands simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m ]
+browser yview see [subst -nobackslashes -nocommands simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m ]
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 839x886+0+27}] != ""} {
+    window geometry "Waveform 1" 839x886+0+27
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+cursor set -using TimeA -time 100ns
+waveform baseline set -time 0
+
+
+set groupId0 [waveform add -groups {{Group 1}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst -nobackslashes -nocommands {
+    simulator::tb_wtu_top.UUT.clk {}
+    simulator::tb_wtu_top.UUT.en {}
+    signed(simulator::tb_wtu_top.UUT.en_count) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.en_v) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.in) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_m.lpo) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_m.hpo) {-radix %d}
+}] {
+    set expected [ join [waveform signals -format fullpath $gpID0] ]
+    if {[string equal $name $expected]} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+
+set groupId0 [waveform add -groups {{Group 2}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst -nobackslashes -nocommands {
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in_prev1) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.in_prev2) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.tmpA) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.tmpB) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.hpo) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_hp.wtu_m.lpo) {-radix %d}
+}] {
+    set expected [ join [waveform signals -format fullpath $gpID0] ]
+    if {[string equal $name $expected]} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+
+set groupId0 [waveform add -groups {{Group 3}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst -nobackslashes -nocommands {
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in_prev1) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.in_prev2) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.tmpA) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.tmpB) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.hpo) {-radix %d}
+    signed(simulator::tb_wtu_top.UUT.wtu0.wtu_lp.wtu_m.lpo) {-radix %d}
+}] {
+    set expected [ join [waveform signals -format fullpath $gpID0] ]
+    if {[string equal $name $expected]} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+
+waveform xview limits 40ns 146ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+-9+19

@@ -1,0 +1,13 @@
+# Output products list for <data_memory>
+data_memory.asy
+data_memory.mif
+data_memory.ngc
+data_memory.sym
+data_memory.v
+data_memory.veo
+data_memory.vhd
+data_memory.vho
+data_memory.xco
+data_memory_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+data_memory_flist.txt
+data_memory_xmdf.tcl

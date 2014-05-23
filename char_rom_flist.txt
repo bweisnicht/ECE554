@@ -1,0 +1,13 @@
+# Output products list for <char_rom>
+char_rom.asy
+char_rom.mif
+char_rom.ngc
+char_rom.sym
+char_rom.v
+char_rom.veo
+char_rom.vhd
+char_rom.vho
+char_rom.xco
+char_rom_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+char_rom_flist.txt
+char_rom_xmdf.tcl

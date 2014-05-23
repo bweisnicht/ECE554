@@ -1,0 +1,12 @@
+# Output products list for <rom>
+rom.asy
+rom.ngc
+rom.sym
+rom.v
+rom.veo
+rom.vhd
+rom.vho
+rom.xco
+rom_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+rom_flist.txt
+rom_xmdf.tcl

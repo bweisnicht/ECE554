@@ -1,0 +1,11 @@
+MYPATH=`pwd`
+ls -1 *.asm > ~/ECE554/ece554/assembler/test.list
+CODEPATH="~/ECE554/ece554/assembler/"
+javac ~/ECE554/ece554/assembler/assemblyConv.java
+echo ~/ECE554/ecels554/assembler/assemblyConv.java
+cd ~/ECE554/ece554/assembler/
+while read p; do
+	java assemblyConv $MYPATH/$p $p
+	cp -f $p $MYPATH
+
+done < test.list

@@ -1,0 +1,5 @@
+addi r0, r0, 0xffff  // r0 = 0xffff
+addi r1, r0, 0xffff  // r1 = r0 + 0xffff
+addi r2, r2, 0xefff  // r2 = 0xefff
+addi r3, r2, 0xefff  // r3 = r2 + 0xefff
+halt

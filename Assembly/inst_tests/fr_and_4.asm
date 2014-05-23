@@ -1,0 +1,9 @@
+// comprehensive & test
+// r3 = 0xfff1 & 0x00ee = 0xffe0
+// r4 = 0x00ee & 0x0011 = 0x0000
+lbi r1, 0xFFF1
+lbi r2, 0x00EE
+and r3, r1, r2
+lbi r3, 0x011
+and r4, r2, r3
+halt

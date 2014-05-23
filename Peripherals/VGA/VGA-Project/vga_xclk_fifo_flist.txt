@@ -1,0 +1,12 @@
+# Output products list for <vga_xclk_fifo>
+vga_xclk_fifo.asy
+vga_xclk_fifo.ngc
+vga_xclk_fifo.sym
+vga_xclk_fifo.v
+vga_xclk_fifo.veo
+vga_xclk_fifo.vhd
+vga_xclk_fifo.vho
+vga_xclk_fifo.xco
+vga_xclk_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+vga_xclk_fifo_flist.txt
+vga_xclk_fifo_xmdf.tcl

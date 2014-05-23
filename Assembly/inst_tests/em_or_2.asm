@@ -1,0 +1,7 @@
+// Test that or-ing 0xFFFF with 0xFFFF yields 0xFFFF
+lbi	r3,0xFF
+slbi	r3,0xFF
+lbi	r4,0xFF
+slbi	r4,0xFF
+or	r5,r4,r3
+HALT

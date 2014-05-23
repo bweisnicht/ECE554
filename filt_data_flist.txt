@@ -1,0 +1,13 @@
+# Output products list for <filt_data>
+filt_data.asy
+filt_data.mif
+filt_data.ngc
+filt_data.sym
+filt_data.v
+filt_data.veo
+filt_data.vhd
+filt_data.vho
+filt_data.xco
+filt_data_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+filt_data_flist.txt
+filt_data_xmdf.tcl

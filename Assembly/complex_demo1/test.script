@@ -1,0 +1,46 @@
+MYPATH=`pwd`
+cd $1
+ls -1 sp_easyTest.asm > test.list
+cd $MYPATH
+echo "run" > command.list
+echo "quit" >> command.list
+
+g++ ~/ECE554/ece554/assembler/assembler554.cpp -o ~/ECE554/ece554/assembler/assembler.out
+g++ ~/ECE554/ece554/assembler/simulator.cpp -o ~/ECE554/ece554/assembler/simulator.out
+echo "starting modelsim compilation"
+cd ~/ECE554/ece554/
+vsim -c <~/ECE554/ece554/assembler/comp_script.do >modelsim_comp.txt
+echo "modelsim compiled"
+cd $MYPATH
+
+while read p; do
+	echo $p
+	~/ECE554/ece554/assembler/assembler.out $p mach_$p > output.tmp
+	echo "$p assembled"
+	cp -f outhexass.mem ~/ECE554/ece554/assembler/
+	~/ECE554/ece554/assembler/simulator.out mach_$p < command.list > output.tmp
+	echo "$p software simulated"
+	cd ~/ECE554/ece554/
+	vsim -c <~/ECE554/ece554/assembler/sim_script.do >modelsim_sim.txt
+	echo "$p modelsim simulated"
+	cd $MYPATH
+	diff ~/ECE554/ece554/reg.trace simoutputfile > test_result.txt
+	RESULT=`head test_result.txt`
+
+	NUM1=${#RESULT}
+	NUM2=0
+	if [ "$NUM1" -gt "$NUM2" ]
+		then
+			echo "ERROR exists in $p"
+			cp test_result.txt $p_result.diff
+		else
+			echo "$p SUCCESS"
+	fi
+
+done < test.list
+rm -f command.list
+
+rm -f output.tmp
+#rm -f mach_*
+
+

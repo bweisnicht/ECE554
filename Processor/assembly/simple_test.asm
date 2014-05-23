@@ -1,0 +1,14 @@
+	lbi $2, 16;
+	lbi $3, 32;
+	nop;
+	nop;
+	nop;
+	nop;
+	nop;
+	add $4, $3, $2;
+	nop;
+	nop;
+	nop;
+	nop;
+	nop;
+	st $5, $4, 0;

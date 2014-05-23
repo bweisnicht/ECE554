@@ -1,0 +1,30 @@
+# CLOCK
+NET "clk" LOC = "AJ15";
+NET "clk" IOSTANDARD = LVCMOS25;
+
+
+# RESET SWITCH
+NET "rst" LOC = "AC11";
+NET "rst" IOSTANDARD = LVCMOS25;
+
+
+
+
+## PINOUT AND IO DRIVE CHARACTERISTICS FOR THE AUDIO PROCESSING
+## SECTION OF THE XUP-V2PRO DEVELOPMENT SYSTEM
+## REVISION C PRINTED CIRCUIT BOARD DEC 8 2004
+NET "sdata_out" LOC = "E8";
+NET "sync" LOC = "F7";
+NET "bit_clk" LOC = "F8";
+NET "audio_reset" LOC = "E6";
+NET "sdata_out" IOSTANDARD = LVTTL;
+NET "sync" IOSTANDARD = LVTTL;
+NET "bit_clk" IOSTANDARD = LVTTL;
+NET "audio_reset" IOSTANDARD = LVTTL;
+NET "sdata_out" DRIVE = 8;
+NET "sync" DRIVE = 8;
+NET "audio_reset" DRIVE = 8;
+NET "sdata_out" SLEW = SLOW;
+NET "sync" SLEW = SLOW;
+NET "audio_reset" SLEW = SLOW;
+

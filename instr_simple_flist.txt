@@ -1,0 +1,13 @@
+# Output products list for <instr_simple>
+instr_simple.asy
+instr_simple.mif
+instr_simple.ngc
+instr_simple.sym
+instr_simple.v
+instr_simple.veo
+instr_simple.vhd
+instr_simple.vho
+instr_simple.xco
+instr_simple_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+instr_simple_flist.txt
+instr_simple_xmdf.tcl

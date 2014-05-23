@@ -1,0 +1,33 @@
+# //  ModelSim SE 10.0c_1 Aug 26 2011 Linux 2.6.42-0.bpo.2-amd64
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+#  
+# Loading project WTU_vsim
+# Compile of tb_wtu_unit.v was successful.
+# Compile of wtu_unit.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Load canceled
+vsim tb_wtu_unit.v
+# OpenFile tb_wtu_unit.v 
+vsim -voptargs=+acc work.tb_wtu_unit
+# vsim -voptargs=+acc work.tb_wtu_unit 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_wtu_unit(fast)
+# Loading work.wtu_unit(fast)
+add wave sim:/tb_wtu_unit/*
+run -all
+#        0       0
+#        x       x
+#  2660096 1348096
+#  4008192       0
+# ** Note: $finish    : /filespace/people/r/rgaiken/ECE554/WTU/tb_wtu_unit.v(23)
+#    Time: 125 ns  Iteration: 0  Instance: /tb_wtu_unit
+# 1
+# Break in Module tb_wtu_unit at /filespace/people/r/rgaiken/ECE554/WTU/tb_wtu_unit.v line 23
+quit

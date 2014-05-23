@@ -1,0 +1,3 @@
+Regarding memories
+ - If we end up going with a depth of higher than ~4 or 5, we will want to use
+     generated memory models rather than the verilog memories
